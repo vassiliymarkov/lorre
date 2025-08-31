@@ -15,3 +15,10 @@ hamburgerBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('menu--active');
     body.classList.toggle('body--fixed');
 });
+
+window.addEventListener("load", () => {
+  const elements = document.querySelectorAll(".hero .animate");
+  elements.forEach((el, i) => {
+    setTimeout(() => el.classList.add("show"), i * 800); // 400мс задержки между элементами
+  });
+});
