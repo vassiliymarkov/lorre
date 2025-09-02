@@ -231,28 +231,40 @@ body {
 
 /*** ANIMALS ***/
 .animals {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0px auto;
     height: calc(100vh - 50px);
 }
+
 .animals__text,
 .animals__img {
-    flex: 1; /* каждый занимает одинаковую долю родителя */
-    display: flex; /* если нужно выравнивание внутреннего контента */
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+.animals__text-layer {
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.animals__text {
+    background: #000000;
     color: #C0C0C0;
+}
+
+.animals__text p {
+    margin: 0;
+    /* убираем дефолтные отступы параграфа */
 }
 
 .animals__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* чтобы картинка не растягивалась криво */
+    object-fit: cover;
+    display: block;
+    /* убираем нижний строчный зазор */
 }
+
 /*** ANIMATIONS ***/
 .fadein {
     opacity: 0;
