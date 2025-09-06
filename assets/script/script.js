@@ -35,10 +35,11 @@ const observer = new IntersectionObserver((entries, obs) => {
     }
   });
 }, {
-  threshold: 0.9,
-  /* rootMargin: '0px 0px -100px 0px' */
+  threshold: 0.2,
+  rootMargin: '0px 0px 0px 0px'
 });
 
 // Наблюдаем все элементы animate-in на странице
-document.querySelectorAll(".animate-in").forEach(el => observer.observe(el));
+document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+document.querySelectorAll('.swipe-from-left').forEach(el => observer.observe(el));
 
