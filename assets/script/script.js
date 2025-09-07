@@ -17,7 +17,7 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 /*** ANIMATIONS ***/
-console.log('script loaded')
+
 /* HERO BLOCK */
 window.addEventListener("load", () => {
   const elements = document.querySelectorAll(".animate");
@@ -41,5 +41,5 @@ const observer = new IntersectionObserver((entries, obs) => {
 
 // Наблюдаем все элементы animate-in на странице
 document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
-document.querySelectorAll('.swipe-from-left').forEach(el => observer.observe(el));
+/* document.querySelectorAll('.swipe-from-left').forEach(el => observer.observe(el)); */
 
