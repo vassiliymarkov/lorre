@@ -15,12 +15,14 @@ body {
     max-width: 1900px;
     min-width: 320px;
     margin: 0 auto;
-    background-color: #2F2F2F;
     font-family: 'Lora', serif;
     overflow-x: hidden;
 }
 
-.container,
+.container {
+    background: #000000;
+}
+
 .container-grey {
     width: 100%;
     margin: 0 auto;
@@ -260,7 +262,7 @@ body {
 
 .animals__text {
     background: #000000;
-    color: #C0C0C0;
+    color: #f4f4f5;
 }
 
 .animals__text-layer,
@@ -326,8 +328,6 @@ body {
 .devider,
 .devider-1 {
     height: 80px;
-    /* background: #B87333; */
-    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,6 +490,7 @@ body {
 
 /*** FOOTER ***/
 .footer {
+    background: #000000;
     width: 100%;
     padding: 20px;
     color: #ffffff;
