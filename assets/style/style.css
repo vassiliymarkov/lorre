@@ -42,7 +42,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 2;
-    background: #000000;
+    background: #2F2F2F;
 }
 
 .header__logo {
