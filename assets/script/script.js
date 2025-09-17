@@ -43,3 +43,22 @@ const observer = new IntersectionObserver((entries, obs) => {
 document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
 /* document.querySelectorAll('.swipe-from-left').forEach(el => observer.observe(el)); */
 
+/*** ANIMALS SECTION PICTURE ANIMATION ***/
+let linkMore = document.querySelectorAll('.link-with-arrow');
+
+linkMore.forEach(link => {
+  // Находим родительскую карточку
+  let card = link.closest('.category__card');
+  if (!card) return; // если нет родителя — пропустить
+  let img = card.querySelector('.category__card-img');
+
+  // Наведение мыши
+  link.addEventListener('mouseover', () => {
+    img.classList.add('greyscale');
+  });
+
+  // Убираем эффект при уходе мыши
+  link.addEventListener('mouseout', () => {
+    img.classList.remove('greyscale');
+  });
+});
