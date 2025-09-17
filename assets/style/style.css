@@ -852,6 +852,7 @@ body {
 }
 
 .category__product-title {
+    padding-top: 10px;
     font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
 }
 
@@ -871,9 +872,6 @@ body {
 }
 
 .link-with-arrow {
-    /* position: absolute;
-    bottom: 0px;
-    right: 100px; */
     display: inline-flex;
     align-items: center;
     gap: .5rem;
